@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schema 2027 · Västerlösa Datorklubb</title>
+  <meta name="description" content="Schema 2027 för Västerlösa Datorklubb: klubbkvällar, barnspåret, temakvällar och evenemang för hela byn.">
+  <meta name="theme-color" content="#0b0f0c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Hoppa till innehållet</a>
+
+<header class="site-header wrap">
+  <a class="logo" href="index.html" aria-label="Västerlösa Datorklubb, startsida">VDK<span class="cursor" aria-hidden="true">_</span></a>
+  <nav aria-label="Huvudmeny">
+    <ul>
+      <li><a href="schema.html" aria-current="page">schema</a></li>
+      <li><a href="delta.html">delta</a></li>
+      <li><a href="projekt.html">projekt</a></li>
+      <li><a href="sponsorer.html">sponsorer</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+  <p class="prompt" aria-hidden="true">$ cat schema-2027.txt</p>
+  <h1>Schema 2027</h1>
+
+  <!-- TODO: bekräfta tiden. Den gäller alla rader som inte har en egen tid, och följer med i kalenderfilen. -->
+  <p>Klubbkvällarna är på torsdagar udda veckor, kl <span id="meeting-time">18.00–21.00</span>.</p>
+  <!-- TODO: lägg in klubbens lokal här. Texten följer med i kalenderfilen. -->
+  <p>Plats: <span id="location">meddelas snart</span></p>
+  <p><button id="calendar-download" class="btn" type="button" hidden>Lägg in schemat i din kalender (.ics)</button></p>
+
+  <!--
+    Så fungerar tabellerna:
+    Varje rad har sitt datum i <time datetime="ÅÅÅÅ-MM-DD">. Nedräkningen på startsidan och
+    kalenderfilen läser datumet därifrån, så håll det formatet så fungerar allt.
+    Har en träff en annan tid än den vanliga, skriv tiden efter datumet:
+    <td><time datetime="2027-11-05">fre 5 nov</time> 18.00–23.00</td>
+  -->
+
+  <section aria-labelledby="spring">
+    <p class="prompt" aria-hidden="true">$ cat varterminen.txt</p>
+    <h2 id="spring">Vårterminen: hårdvara, operativsystem och nätverk</h2>
+    <p>Terminen börjar med premiär och bygdemöte den 21 januari och slutar med en visning för byn den 10 juni. Barnspåret kör Scratch parallellt från februari.</p>
+    <table class="schedule term" aria-labelledby="spring">
+      <thead>
+        <tr><th scope="col">Vecka</th><th scope="col">Datum</th><th scope="col">Tema</th><th scope="col">Barnspåret</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>3</td><td><time datetime="2027-01-21">tor 21 jan</time></td><td>Premiär och öppet bygdemöte: presentation av klubben, intresseanmälan, beslut om bygdepengen</td><td>Prova på</td></tr>
+        <tr><td>5</td><td><time datetime="2027-02-04">tor 4 feb</time></td><td>Vad finns i en dator? Vi skruvar isär</td><td>Skruva isär</td></tr>
+        <tr><td>7</td><td><time datetime="2027-02-18">tor 18 feb</time></td><td>Bygg ihop och felsök</td><td>Kom igång med Scratch</td></tr>
+        <tr><td>9</td><td><time datetime="2027-03-04">tor 4 mar</time></td><td>Installera Linux på skänkta datorer</td><td>Scratch: första spelet</td></tr>
+        <tr><td>11</td><td><time datetime="2027-03-18">tor 18 mar</time></td><td>Windows, Mac och Linux sida vid sida</td><td>Scratch: figurer och ljud</td></tr>
+        <tr><td>13</td><td><time datetime="2027-04-01">tor 1 apr</time></td><td>Backup och lösenordshanterare</td><td>Scratch: poäng och nivåer</td></tr>
+        <tr><td>15</td><td><time datetime="2027-04-15">tor 15 apr</time></td><td>Nätverk 1: koppla ihop datorer, IP-adresser</td><td>Hur internet fungerar, med lekar</td></tr>
+        <tr><td>17</td><td><time datetime="2027-04-29">tor 29 apr</time></td><td>Nätverk 2: dela filer och sätt upp wifi</td><td>Scratch: spela varandras spel</td></tr>
+        <tr><td>19</td><td><time datetime="2027-05-13">tor 13 maj</time></td><td>Reparationskafé: ta med egna datorer och telefoner</td><td>Hjälp till som felsökare</td></tr>
+        <tr><td>21</td><td><time datetime="2027-05-27">tor 27 maj</time></td><td>Förbered vårvisningen</td><td>Förbered vårvisningen</td></tr>
+        <tr><td>23</td><td><time datetime="2027-06-10">tor 10 jun</time></td><td>Vårvisning för byn och överlämning av renoverade datorer</td><td>Visa sina spel</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section aria-labelledby="events">
+    <p class="prompt" aria-hidden="true">$ cat temakvallar.txt</p>
+    <h2 id="events">Temakvällar och evenemang för hela byn</h2>
+    <p>Fyra temakvällar är öppna för alla som bor i byn, två per termin. Dessutom bjuder vi in hela byn till premiären, vårvisningen och julavslutningen, och på höstlovet blir det LAN-kväll.</p>
+    <table class="schedule events" aria-labelledby="events">
+      <thead>
+        <tr><th scope="col">Vecka</th><th scope="col">Datum</th><th scope="col">Evenemang</th><th scope="col">Målgrupp</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>3</td><td><time datetime="2027-01-21">tor 21 jan</time></td><td>Premiär och öppet bygdemöte</td><td>Alla</td></tr>
+        <tr><td>6</td><td><time datetime="2027-02-11">tor 11 feb</time></td><td>Temakväll: bedrägerier och säkerhet på nätet</td><td>Vuxna och äldre</td></tr>
+        <tr><td>16</td><td><time datetime="2027-04-22">tor 22 apr</time></td><td>Temakväll: AI i vardagen</td><td>Alla</td></tr>
+        <tr><td>23</td><td><time datetime="2027-06-10">tor 10 jun</time></td><td>Vårvisning för byn</td><td>Alla</td></tr>
+        <tr><td>38</td><td><time datetime="2027-09-23">tor 23 sep</time></td><td>Temakväll: digital vardag med BankID, Swish och 1177, med hjälp på plats</td><td>Äldre</td></tr>
+        <tr><td>44</td><td><time datetime="2027-11-05">fre 5 nov</time></td><td>LAN-kväll i bygdegården</td><td>13 till 25 år</td></tr>
+        <tr><td>46</td><td><time datetime="2027-11-18">tor 18 nov</time></td><td>Temakväll: barn och skärmar</td><td>Föräldrar</td></tr>
+        <tr><td>49</td><td><time datetime="2027-12-09">tor 9 dec</time></td><td>Julavslutning med visning av väderstationen och hemsidan</td><td>Alla</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section aria-labelledby="autumn">
+    <p class="prompt" aria-hidden="true">$ cat hostterminen.txt</p>
+    <h2 id="autumn">Höstterminen: programmering och projekt</h2>
+    <p>Terminen börjar den 2 september och har två gemensamma projekt, en väderstation och byaföreningens hemsida, som visas upp på julavslutningen den 9 december.</p>
+    <table class="schedule term" aria-labelledby="autumn">
+      <thead>
+        <tr><th scope="col">Vecka</th><th scope="col">Datum</th><th scope="col">Tema</th><th scope="col">Barnspåret</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>35</td><td><time datetime="2027-09-02">tor 2 sep</time></td><td>Terminsstart: Python för nybörjare</td><td>Scratch: repetition och nya spel</td></tr>
+        <tr><td>37</td><td><time datetime="2027-09-16">tor 16 sep</time></td><td>Python: variabler, villkor och loopar</td><td>Scratch: berätta en historia</td></tr>
+        <tr><td>39</td><td><time datetime="2027-09-30">tor 30 sep</time></td><td>Kom igång med Raspberry Pi</td><td>Raspberry Pi: lampor och knappar</td></tr>
+        <tr><td>41</td><td><time datetime="2027-10-14">tor 14 okt</time></td><td>Väderstationen 1: sensorer och koppling</td><td>Väderstationen: bygg lådan</td></tr>
+        <tr><td>43</td><td><time datetime="2027-10-28">tor 28 okt</time></td><td>Väderstationen 2: spara och visa mätvärden</td><td>Väderstationen: rita grafer</td></tr>
+        <tr><td>45</td><td><time datetime="2027-11-11">tor 11 nov</time></td><td>Byns hemsida 1: HTML och struktur</td><td>Gör en egen sida om sig själv</td></tr>
+        <tr><td>47</td><td><time datetime="2027-11-25">tor 25 nov</time></td><td>Byns hemsida 2: design och publicering</td><td>Bilder och färger på sidan</td></tr>
+        <tr><td>49</td><td><time datetime="2027-12-09">tor 9 dec</time></td><td>Julavslutning: visning av väderstationen och hemsidan</td><td>Visa sina projekt</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer class="site-footer wrap">
+  <p>Västerlösa Datorklubb · byggd för hand med HTML, CSS och kaffe · <a href="https://github.com/vasterlosa-datorklubb/vdk-hemsida">källkoden på GitHub</a></p>
+  <p class="konami" title="Prova att trycka på tangenterna">↑ ↑ ↓ ↓ ← → ← → B A</p>
+</footer>
+</body>
+</html>

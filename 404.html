@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 · Västerlösa Datorklubb</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0b0f0c">
+  <!-- Stilen ligger här i filen, så att sidan fungerar oavsett vilken adress som saknas -->
+  <style>
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      background: #0b0f0c;
+      color: #b9f3c6;
+      font: 16px/1.6 ui-monospace, "Cascadia Code", "JetBrains Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+    }
+    main { max-width: 78ch; margin: 0 auto; }
+    pre { white-space: pre-wrap; word-break: break-word; margin: 0 0 2rem; font: inherit; }
+    .panic { color: #ff6b6b; }
+    h1 { color: #3dff7f; font-size: 1.5rem; }
+    a { color: #ffb547; }
+    a:hover { background: #ffb547; color: #0b0f0c; }
+  </style>
+</head>
+<body>
+<main>
+<pre aria-hidden="true">[    0.000000] Linux version 4.0.4-vdk (klubben@vasterlosa)
+[    0.004040] Hämtar sida...
+[    0.004041] <span class="panic">Kernel panic - not syncing: Sidan hittades inte (fel 404)</span>
+[    0.004042] CPU: 0 PID: 404 Comm: webbläsare
+[    0.004043] Call Trace:
+[    0.004044]  hitta_sida+0x404/0x404
+[    0.004045]  du_kanske_skrev_fel+0x1/0x1
+[    0.004046]  lanken_kanske_ar_gammal+0x2/0x2
+[    0.004047] ---[ end Kernel panic ]---</pre>
+
+  <h1>404: Sidan finns inte</h1>
+  <p>Sidan du letar efter finns inte, eller så har den flyttat.</p>
+  <p><a href="/">Starta om (tillbaka till startsidan)</a></p>
+</main>
+</body>
+</html>

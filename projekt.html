@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projekt · Västerlösa Datorklubb</title>
+  <meta name="description" content="Det Västerlösa Datorklubb bygger 2027: renoverade datorer, Scratch-spel, en väderstation och byns hemsida.">
+  <meta name="theme-color" content="#0b0f0c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Hoppa till innehållet</a>
+
+<header class="site-header wrap">
+  <a class="logo" href="index.html" aria-label="Västerlösa Datorklubb, startsida">VDK<span class="cursor" aria-hidden="true">_</span></a>
+  <nav aria-label="Huvudmeny">
+    <ul>
+      <li><a href="schema.html">schema</a></li>
+      <li><a href="delta.html">delta</a></li>
+      <li><a href="projekt.html" aria-current="page">projekt</a></li>
+      <li><a href="sponsorer.html">sponsorer</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+  <p class="prompt" aria-hidden="true">$ ls ~/projekt</p>
+  <h1>Projekt</h1>
+  <p>Här samlar vi det klubben bygger. All kod läggs öppet på GitHub, så att vem som helst kan titta, lära sig och bidra.</p>
+  <p>GitHub: <a href="https://github.com/vasterlosa-datorklubb">github.com/vasterlosa-datorklubb</a></p>
+
+  <ul class="repos">
+    <li class="repo">
+      <h2><span class="dim">vasterlosa-datorklubb/</span><wbr><a class="name" href="https://github.com/vasterlosa-datorklubb/vdk-hemsida">vdk-hemsida</a></h2>
+      <p>Den här sajten, och klubbens allra första projekt. Vanlig HTML, CSS och lite JavaScript, inga ramverk. Under hösten bygger vi vidare på den tillsammans, från HTML och struktur till design och publicering.</p>
+      <p>Hittar du en bugg eller något som kan bli bättre? <a href="https://github.com/vasterlosa-datorklubb/vdk-hemsida/issues">Skriv ett issue</a> eller skicka en <a href="https://github.com/vasterlosa-datorklubb/vdk-hemsida/pulls">pull request</a>!</p>
+      <div class="langbar" aria-hidden="true">
+        <span class="lang-html" style="width: 59%"></span>
+        <span class="lang-css" style="width: 18%"></span>
+        <span class="lang-js" style="width: 23%"></span>
+      </div>
+      <p class="meta">
+        <i class="lang-html"></i>HTML 59% · <i class="lang-css"></i>CSS 18% · <i class="lang-js"></i>JavaScript 23%
+        <br>status: pågår · byggs vidare tor 11 nov och tor 25 nov · visas tor 9 dec
+      </p>
+    </li>
+    <li class="repo">
+      <h2><span class="dim">vasterlosa-datorklubb/</span><wbr><span class="name">datorer-till-byn</span></h2>
+      <p>Vi installerar Linux på skänkta datorer och lämnar över dem renoverade på vårvisningen.</p>
+      <p class="meta">status: planerad · start tor 4 mar · visas tor 10 jun</p>
+    </li>
+    <li class="repo">
+      <h2><span class="dim">vasterlosa-datorklubb/</span><wbr><span class="name">scratch-spel</span></h2>
+      <p>Barnspårets egna spel i Scratch, med figurer, ljud, poäng och nivåer. Alla får spela varandras spel innan de visas upp på vårvisningen.</p>
+      <p class="meta">status: planerad · start tor 18 feb · visas tor 10 jun</p>
+    </li>
+    <li class="repo">
+      <h2><span class="dim">vasterlosa-datorklubb/</span><wbr><span class="name">vaderstation</span></h2>
+      <p>En väderstation på en Raspberry Pi. Vi kopplar in sensorer, sparar mätvärdena och ritar grafer, och barnspåret bygger lådan.</p>
+      <p class="meta">status: planerad · start tor 14 okt · visas tor 9 dec</p>
+    </li>
+    <li class="repo repo-empty">
+      <h2><span class="dim">vasterlosa-datorklubb/</span><wbr><span class="name">ditt-projekt</span></h2>
+      <p>Nästa projekt kan vara ditt. Ta med en idé till en träff, stor som liten.</p>
+      <p class="meta">status: väntar på dig</p>
+    </li>
+  </ul>
+</main>
+
+<footer class="site-footer wrap">
+  <p>Västerlösa Datorklubb · byggd för hand med HTML, CSS och kaffe · <a href="https://github.com/vasterlosa-datorklubb/vdk-hemsida">källkoden på GitHub</a></p>
+  <p class="konami" title="Prova att trycka på tangenterna">↑ ↑ ↓ ↓ ← → ← → B A</p>
+</footer>
+</body>
+</html>

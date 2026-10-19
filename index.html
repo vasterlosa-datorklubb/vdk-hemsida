@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Västerlösa Datorklubb</title>
+  <meta name="description" content="Västerlösa Datorklubb: en datorklubb för hela byn, med klubbkvällar, barnspår och temakvällar under 2027.">
+  <meta name="theme-color" content="#0b0f0c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<!--
+  Hej du som läser källkoden!
+  Det är precis så här man lär sig. Fortsätt gräva.
+
+  Flagga 1/4: VDK{v13w_s0urc3_4r_3n_sup3rkr4ft}
+-->
+<a class="skip" href="#main">Hoppa till innehållet</a>
+
+<header class="site-header wrap">
+  <a class="logo" href="index.html" aria-label="Västerlösa Datorklubb, startsida">VDK<span class="cursor" aria-hidden="true">_</span></a>
+  <nav aria-label="Huvudmeny">
+    <ul>
+      <li><a href="schema.html">schema</a></li>
+      <li><a href="delta.html">delta</a></li>
+      <li><a href="projekt.html">projekt</a></li>
+      <li><a href="sponsorer.html">sponsorer</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+
+  <section aria-labelledby="title">
+<pre class="ascii" aria-hidden="true">
+__     ______  _  __
+\ \   / /  _ \| |/ /
+ \ \ / /| | | | ' /
+  \ V / | |_| | . \
+   \_/  |____/|_|\_\
+</pre>
+    <h1 id="title">Västerlösa Datorklubb</h1>
+    <p class="tagline">En datorklubb för hela byn. Vi skruvar, installerar, programmerar och bygger saker tillsammans, och barnen har ett eget spår med Scratch. Nybörjare och veteraner är lika välkomna.</p>
+    <p><a href="delta.html">Så är du med</a> · <a href="schema.html">Schema 2027</a></p>
+  </section>
+
+  <!-- Fylls i av main.js utifrån schema.html -->
+  <section id="next-meetup" class="box" aria-labelledby="next-title" hidden>
+    <p class="prompt" aria-hidden="true">$ ./nasta-traff --nedrakning</p>
+    <h2 id="next-title">Nästa träff</h2>
+    <p class="next-when" data-field="when"></p>
+    <p class="next-what" data-field="what"></p>
+    <p class="countdown" data-field="countdown"></p>
+    <p class="unix dim" data-field="unix"></p>
+  </section>
+
+  <section aria-labelledby="year-title">
+    <p class="prompt" aria-hidden="true">$ cat 2027.txt</p>
+    <h2 id="year-title">Det här gör vi 2027</h2>
+    <dl>
+      <dt>Vårterminen: hårdvara, operativsystem och nätverk</dt>
+      <dd>Vi skruvar isär datorer, installerar Linux på skänkta datorer och kopplar ihop allt i ett nätverk. Terminen börjar med premiär och öppet bygdemöte torsdag 21 januari.</dd>
+      <dt>Höstterminen: programmering och projekt</dt>
+      <dd>Python, Raspberry Pi och två gemensamma projekt: en väderstation och byaföreningens hemsida. Allt visas upp på julavslutningen 9 december.</dd>
+      <dt>Barnspåret</dt>
+      <dd>Barnen har ett eget spår parallellt med klubbkvällarna: egna spel i Scratch på våren, Raspberry Pi och väderstationen på hösten.</dd>
+      <dt>Temakvällar för hela byn</dt>
+      <dd>Fyra kvällar som är öppna för alla som bor i byn: bedrägerier och säkerhet på nätet, AI i vardagen, digital vardag med BankID, Swish och 1177, samt barn och skärmar.</dd>
+    </dl>
+    <p><a href="schema.html">Se hela schemat</a></p>
+  </section>
+
+  <section aria-labelledby="quest-title">
+    <p class="prompt" aria-hidden="true">$ cat sidouppdrag.txt</p>
+    <h2 id="quest-title">Sidouppdrag: flaggjakt</h2>
+    <p>Det finns fyra flaggor gömda på den här sajten. De ser ut ungefär så här: <code>VDK{...}</code></p>
+    <p>Hittar du alla fyra? Visa dem på nästa träff så vankas det ära och berömmelse.</p>
+    <p class="dim">Tips: allt du behöver är en webbläsare och lite nyfikenhet.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <p>Västerlösa Datorklubb · byggd för hand med HTML, CSS och kaffe · <a href="https://github.com/vasterlosa-datorklubb/vdk-hemsida">källkoden på GitHub</a></p>
+  <p class="konami" title="Prova att trycka på tangenterna">↑ ↑ ↓ ↓ ← → ← → B A</p>
+</footer>
+</body>
+</html>

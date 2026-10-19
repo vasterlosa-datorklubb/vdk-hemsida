@@ -1,0 +1,6 @@
+# Hej robot! Och hej människa som läser robots.txt, du är vår sort.
+#
+# Flagga 3/4: VDK{r0b0t4r_l4s3r_0cks4}
+
+User-agent: *
+Allow: /

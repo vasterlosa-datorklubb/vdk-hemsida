@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sponsorer · Västerlösa Datorklubb</title>
+  <meta name="description" content="De som gör Västerlösa Datorklubb möjlig, och hur du kan bli en av dem.">
+  <meta name="theme-color" content="#0b0f0c">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Hoppa till innehållet</a>
+
+<header class="site-header wrap">
+  <a class="logo" href="index.html" aria-label="Västerlösa Datorklubb, startsida">VDK<span class="cursor" aria-hidden="true">_</span></a>
+  <nav aria-label="Huvudmeny">
+    <ul>
+      <li><a href="schema.html">schema</a></li>
+      <li><a href="delta.html">delta</a></li>
+      <li><a href="projekt.html">projekt</a></li>
+      <li><a href="sponsorer.html" aria-current="page">sponsorer</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+  <p class="prompt" aria-hidden="true">$ cat /etc/sponsorer</p>
+  <h1>Sponsorer</h1>
+  <p>Västerlösa Datorklubb drivs ideellt. Utan sponsorer blir det varken fika, Raspberry Pi eller sensorer till väderstationen. Stort tack till alla som hjälper till!</p>
+
+  <!--
+    Byt ut en "Ledig plats" mot en sponsor så här:
+    <li><a href="https://example.se"><img src="sponsorer/foretaget.svg" alt="Företaget AB"></a></li>
+  -->
+
+  <section class="tier tier-ssd" aria-labelledby="ssd">
+    <h2 id="ssd">SSD <small>huvudsponsor</small></h2>
+    <ul class="slots">
+      <li class="free">Ledig plats</li>
+    </ul>
+  </section>
+
+  <section class="tier tier-hdd" aria-labelledby="hdd">
+    <h2 id="hdd">HDD <small>sponsor</small></h2>
+    <ul class="slots">
+      <li class="free">Ledig plats</li>
+      <li class="free">Ledig plats</li>
+    </ul>
+  </section>
+
+  <section class="tier" aria-labelledby="diskett">
+    <h2 id="diskett">Diskett <small>supporter</small></h2>
+    <ul class="slots">
+      <li class="free">Ledig plats</li>
+      <li class="free">Ledig plats</li>
+      <li class="free">Ledig plats</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="bli-sponsor">
+    <h2 id="bli-sponsor">Bli sponsor</h2>
+    <p>Vi behöver hjälp med till exempel:</p>
+    <ul>
+      <li>Fika (datorer går på el, programmerare går på kaffe)</li>
+      <li>Hårdvara: Raspberry Pi, sensorer till väderstationen, kablar och skärmar</li>
+      <li>Gamla datorer som vi kan renovera och skänka vidare</li>
+    </ul>
+    <!-- TODO: lägg in kontaktväg för sponsorer -->
+    <p>Vill du hjälpa till? Kontaktuppgifter kommer snart. Tills dess är du varmt välkommen förbi på en <a href="schema.html">träff</a>.</p>
+  </section>
+</main>
+
+<footer class="site-footer wrap">
+  <p>Västerlösa Datorklubb · byggd för hand med HTML, CSS och kaffe · <a href="https://github.com/vasterlosa-datorklubb/vdk-hemsida">källkoden på GitHub</a></p>
+  <p class="konami" title="Prova att trycka på tangenterna">↑ ↑ ↓ ↓ ← → ← → B A</p>
+</footer>
+</body>
+</html>

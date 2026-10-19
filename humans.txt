@@ -1,0 +1,12 @@
+/* KLUBBEN */
+Namn: Västerlösa Datorklubb
+Plats: Västerlösa
+
+/* MEDLEMMAR */
+Lägg till dig själv här med en pull request!
+
+/* SAJTEN */
+Källkod: https://github.com/vasterlosa-datorklubb/vdk-hemsida
+Byggd med: HTML, CSS, lite JavaScript och kaffe
+Ramverk: inga
+Standarder: HTML5, CSS3, ISO 8601

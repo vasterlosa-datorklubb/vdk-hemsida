@@ -1,0 +1,53 @@
+# ---------- AI-verktyg ----------
+# Claude Code
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json
+
+# ruflo / claude-flow (skapas automatiskt när verktygen körs i mappen)
+.claude-flow/
+.swarm/
+.hive-mind/
+ruvector.db
+/memory/
+/coordination/
+
+# Andra AI-assistenter
+.cursor/
+.cursorrules
+.windsurf/
+.continue/
+.aider*
+.codex/
+.gemini/
+GEMINI.md
+AGENTS.md
+
+# ---------- Databaser och loggar ----------
+# Sajten är helt statisk, så databaser här är alltid skräp från något verktyg
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.log
+
+# ---------- Hemligheter ----------
+.env
+.env.*
+
+# ---------- Node, om vi lägger till byggverktyg senare ----------
+node_modules/
+
+# ---------- Operativsystem ----------
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# ---------- Editorer ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
